@@ -78,6 +78,15 @@ class Address(Document):
     def get_country(self):
         return frappe.get_doc("Country", self.country)
 
+    def get_as_string(self):
+        values = []
+        for field in ("address_line1", "city", "state", "country"):
+            if self.get(field):
+                values.append(self.get(field))
+
+        return ", ".join(values)
+
+
 @frappe.whitelist()
 def get_default_address(doctype, name, sort_key='is_primary_address'):
     '''Returns default Address name for the given doctype, name'''
