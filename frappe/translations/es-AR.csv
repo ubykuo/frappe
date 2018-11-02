@@ -1122,7 +1122,6 @@ apps/frappe/frappe/core/doctype/file/test_file.py +57,Home/Test Folder 2,Inicio 
 DocType: Integration Request,Host,Anfitrión
 DocType: Data Migration Connector,Hostname,Nombre de Host
 DocType: Currency,"How should this currency be formatted? If not set, will use system defaults","¿Cómo se debe formatear esta moneda? Si no se establece, el sistema utilizará los valores por defecto"
-DocType: Deleted Document,Hub Sync ID,ID de Sincronización del Hub
 apps/frappe/frappe/utils/bot.py +43,I found these: ,He encontrado los siguientes:
 apps/frappe/frappe/desk/report/todo/todo.py +19,ID,Identificador
 DocType: Property Setter,ID (name) of the entity whose property is to be set,Identificación ( nombre) de la entidad cuya propiedad va a establecerse
